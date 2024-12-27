@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/all.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/DataFill.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>LogIn</title>
+</head>
+<body>
+    <header class="navbar px-3">
+        <a href="index.html" class="navbar-brand nav-link">
+            <img src="Images/logo.svg" alt="logo">
+        </a>
+    </header>
+    <main>
+        <form class="p-lg-5 p-4 col-md-9 col-11 m-auto bg-light rounded-3 shadow mt-5">
+            <label for="EmailFromLogin" class="fs-5 text-black fw-medium mb-1">Email address</label>
+            <input type="email" id="EmailFromLogin" class="form-control text-black fs-4">
+            <span class="d-block mb-3 text-black">Don't have an account? <a href="register.html" class="text-decoration-none fw-bold fs-5">Register Now</a></span>
+            <label for="PasswordFromLogin" class="fs-5 text-black fw-medium mb-1 d-block">Password</label>
+            <input type="password" class="form-control mb-3 text-black fs-4" id="PasswordFromLogin">
+            <input type="checkbox" id="checkBox" class="mb-4 form-check-input mt-2">
+            <label for="checkBox" class="fs-5 text-black fw-medium form-check-label mb-4">Remember me</label>
+            <button type="submit" class="btn text-white btn-lg px-4 d-block border-0" id="logBtn" >submit</button>
+        </form>
+    </main>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/login.js"></script>
+</body>
+</html>

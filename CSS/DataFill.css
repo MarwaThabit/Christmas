@@ -1,0 +1,13 @@
+input.form-control:focus,input.form-check-input:checked,input.form-check-input:not(:checked){
+    border-color: black;
+    box-shadow: none;
+}
+span a{
+    color: #830909 !important;
+}
+input.form-check-input:checked{
+    border: none;
+}
+input.form-control,input.form-control:focus{
+    background-color: transparent;
+}

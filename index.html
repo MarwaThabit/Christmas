@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/all.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Christmas</title>
+</head>
+<body style="background: #f7f7f7;">
+    <header class="navbar navbar-expand-lg px-3 d-flex justify-content-between">
+        <a href="index.html" class="navbar-brand nav-link"><img src="Images/logo.svg" alt="logo"></a>
+        <p class="mb-0 fw-medium fs-3 text-black flex-md-grow-0 flex-grow-1 text-md-end text-center"></p><!-- order-3 order-md-0   -->
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#myNavbar"><span class="navbar-toggler-icon"></span></button>
+        <section class="collapse navbar-collapse flex-grow-0 " id="myNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="login.html"  class="nav-link text-black fs-4 fw-semibold">Login</a></li>
+                <li class="nav-item"><a href="register.html" class="nav-link text-black fs-4 fw-semibold">Sign Up</a></li>
+            </ul>
+            <section class="userData  align-items-center justify-content-md-end justify-content-evenly my-md-0 my-2">
+                <i class="fa-solid fa-cart-shopping fs-3 position-relative me-3">
+                    <span class="badge  position-absolute d-block rounded-circle fw-normal">0</span>
+                </i><!-- cart icon with counter -->
+                <section class="cartTools me-4">
+                    <span class="fw-medium fs-4 text-black ">Cart</span>
+                    <i class="fa-solid fa-caret-down fs-5" style="cursor: pointer;"></i>
+                </section><!-- cartTools -->
+                <section class="cart position-absolute end-0 z-2 shadow-sm rounded py-4 px-3">
+                    <section class="cartArea"></section>
+                    <button class="btn btn-lg text-white d-block m-auto border-0">View all products</button>
+                </section><!-- cart(contentOfCart) -->
+                <a href="#" class="text-black text-decoration-none fs-4 fw-semibold logout">Logout</a>
+            </section>
+        </section>
+    </header>
+    <main>
+        <form class="d-flex gap-lg-3 p-lg-4 p-1 gap-1">
+            <select id="searchBy" class="form-select">
+                <option>search by name</option>
+                <option>search by category</option>
+            </select>
+            <input type="search" id="search" placeholder="Search" class="form-control" onkeydown="searchProducts()">
+        </form>
+        <hr>
+        <section class="products row m-auto py-2 mt-5 px-md-5 px-0 container justify-content-xl-start justify-content-md-between "></section>
+    </main>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/commonActions.js"></script>
+    <script src="JS/script.js"></script>
+    <script src="JS/favoriteActions.js"></script>
+</body>
+</html>

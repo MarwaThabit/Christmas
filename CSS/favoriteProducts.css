@@ -1,0 +1,30 @@
+body{
+    background:url(../Images/bg2.jpg) no-repeat center/cover;
+}
+.title hr{
+    width: 8%;
+    border:2px solid #af0c0c !important;
+    border-radius: 10px;
+}
+.title h2:hover+hr{
+    transform: scaleX(1.2);
+}
+@media(max-width:768px){
+    .cartProducts .card img{
+        height: 60%;
+        width: 90% !important;
+        margin: auto;
+        border-radius: 5px !important;
+    }
+    .cartProducts .card{
+        height: 480px;
+    }
+    .title hr{
+        width: 30%;
+    }
+}
+@media(min-width:992px){
+    .cartProducts .card{
+        height: 295px;
+    }
+}

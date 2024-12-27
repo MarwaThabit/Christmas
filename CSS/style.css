@@ -1,0 +1,39 @@
+header a.navbar-brand img{
+    width: 165px;
+    height: 55px;
+}
+input.form-check-input:checked,.btn,i span{
+    background-color: #af0c0c !important;
+}
+#searchBy:focus,#search:focus{
+    box-shadow: none;
+    border-color: #af0c0c;
+}
+.userData,.cart,.favoriteProducts{
+    display: none;
+}
+.userData i span:first-of-type{
+    padding: 6px 9px;
+    font-size: 15px !important;
+    top: 11px;
+    right: -13px;
+}
+.products section.item .card,.btn,.title hr,.favoriteProductsArea>section .card{
+    transition: 0.5s;
+}
+.products section.item .card:hover,.favoriteProductsArea>section .card:hover{
+    border: 1px solid #af0c0c;
+    transform: translateY(-5px);
+}
+@media (max-width: 768px) {
+    header>p{
+        flex-basis: 100%;
+        order:3
+    } 
+}
+.btn:hover{
+    background-color: #bf1414 !important;
+}
+select{
+    background-image: url("../Images/up-and-down.png") !important;
+}
